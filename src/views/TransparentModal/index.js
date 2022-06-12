@@ -8,15 +8,7 @@ import {
   BackHandler,
   Text,
 } from "react-native";
-import { windowHeight, windowWidth } from "../../utils/helper";
-
-let center = {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  marginRight: -15,
-  height: "100%",
-};
+import { center, windowHeight, windowWidth } from "../../utils/helper";
 
 export function Title({ children, style, center, light }) {
   return (
@@ -36,12 +28,9 @@ export function Title({ children, style, center, light }) {
 }
 
 export default function TransparentModal({
-  children,
-  show,
   headerShown,
-  style,
+
   headerTitle,
-  bg,
 }) {
   const [isShow, setShow] = useState(false);
 
